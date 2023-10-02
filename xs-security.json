@@ -1,0 +1,11 @@
+{
+  "xsappname" : "Sdk",
+  "tenant-mode" : "dedicated",
+  "oauth2-configuration": {
+    "token-validity": 900, 
+    "autoapprove": "true",
+    "redirect-uris": [
+       "https://*.eu10-004.hana.ondemand.com/login/callback" 
+    ]
+}
+}

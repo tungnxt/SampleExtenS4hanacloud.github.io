@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logged out</title>
+    <style>
+        p.normal {
+            font-family: "Arial", sans-serif;
+            text-indent: 150px; 
+        }
+        a {
+            font-family: "Arial", sans-serif;
+            text-indent: 150px; 
+        }
+        button {
+            font-family: "Arial", sans-serif;
+            font-size: 13pt;
+            padding: 15px 32px;
+        }
+        h1 {
+            font-family: "Arial", sans-serif;
+            text-indent: 150px; 
+        }
+        h2 {
+            font-family: "Arial", sans-serif;
+        }
+        h3 {
+            font-family: "Arial", sans-serif;
+        }
+        .login { 
+                text-indent: 150px; 
+            } 
+        .header {
+            display: block;
+            padding: 1em 0 .95em;
+            font-family: "Arial", sans-serif;
+            font-size: 22px;
+            background: #007c99;
+            color: #fff;
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+    <script>
+        // This function forces a reload of the destination page from the server. It does this by 
+        // supplying a unique argument value with each new invocation.
+        function refreshMain() {
+            var unique = new Date().getTime().toString(16);
+            window.location.href = "/?force="+unique;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header">
+    	<h1>TDash</h1>
+	</div>
+
+	<div class="login">
+	    <h2>You are now logged out</h2>
+	    <p><button onclick="refreshMain()">Return to the application</button></p>
+    </div>
+</body>
+
+</html>

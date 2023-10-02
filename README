@@ -1,0 +1,29 @@
+## Projects: Complete Extend S4Hana Cloud by using CAP <use cloud foundry enviroments>
+
+---
+
+Written by: Tungnx - 10/08/2023
+
+## Giới thiệu
+
+## Tài liệu
+
+1. Consuming Services: https://cap.cloud.sap/docs/guides/using-services#execute-queries
+2. SAP Cloud SDK For Javascript: https://sap.github.io/cloud-sdk/docs/js/overview
+3. SAP Cloud SDK for excute odata services: https://sap.github.io/cloud-sdk/docs/js/tutorials/getting-started/execute-an-odata-request
+4. Sample using Destination for call Api/Odata of SAP S4HANA Cloud: https://api.sap.com/api/API_SALES_ORDER_SRV/cloud-sdk/JavaScript
+5. Using Authentication type for call Odata: https://sap.github.io/cloud-sdk/docs/js/features/connectivity/destinations
+
+## SystemLandsapce
+
+## Cấu hình
+
+1. Installations:
+
+- Node:
+- Npm:
+- Cloud foundry CLI:
+- Nest CLI: npm i -g @nestjs/cli
+- @sap-cloud-sdk/generator: npm install -D @sap-cloud-sdk/generator <Dependencies>
+
+## Source Code

@@ -1,0 +1,29 @@
+{
+	"welcomeFile": "index.html",
+	"authenticationMethod": "route",
+	"logout": {
+		"logoutEndpoint": "/logout",
+		"logoutPage": "logout.html"
+	  },
+    "routes": [	
+		{
+			"source": "^/Sdk/(.*)$",	
+			"target": "$1",
+			"cacheControl": "no-cache, no-store, must-revalidate",
+			"authenticationType": "xsuaa",
+			"destination": "Sdk"
+		},
+		{
+			"source": "^/logout$",
+			"localDir": "resources",
+			"authenticationType": "none"
+		},
+		{
+			"source": "^/(.*)",
+			"localDir": "resources",
+			"cacheControl": "no-cache, no-store, must-revalidate"
+		}
+	  ]
+	}
+
+    

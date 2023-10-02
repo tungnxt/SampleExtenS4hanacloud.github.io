@@ -1,0 +1,29 @@
+---
+applications:
+  - name: approuter
+    default-route: true
+    buildpacks:
+      - nodejs_buildpack
+    path: approuter
+    memory: 128M
+    env:
+      destinations: >
+        [
+          {
+            "name":"Sdk",
+            "url":"https://Sdk.cfapps.eu10-004.hana.ondemand.com",
+            "forwardAuthToken": true
+          }
+        ]
+    services:
+      - my-xsuaa
+
+  - name: Sdk
+    default-route: true
+    buildpacks:
+      - nodejs_buildpack
+    path: saleorderapp
+    memory: 256M
+    services:
+      - my-destination
+      - my-xsuaa
