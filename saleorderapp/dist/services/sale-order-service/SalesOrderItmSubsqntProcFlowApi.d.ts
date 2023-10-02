@@ -1,0 +1,44 @@
+import { SalesOrderItmSubsqntProcFlow } from './SalesOrderItmSubsqntProcFlow';
+import { SalesOrderItmSubsqntProcFlowRequestBuilder } from './SalesOrderItmSubsqntProcFlowRequestBuilder';
+import { SalesOrderApi } from './SalesOrderApi';
+import { SalesOrderItemApi } from './SalesOrderItemApi';
+import { CustomField, DefaultDeSerializers, DeSerializers, AllFields, EntityBuilderType, EntityApi, FieldBuilder, OrderableEdmTypeField, OneToOneLink } from '@sap-cloud-sdk/odata-v2';
+export declare class SalesOrderItmSubsqntProcFlowApi<DeSerializersT extends DeSerializers = DefaultDeSerializers> implements EntityApi<SalesOrderItmSubsqntProcFlow<DeSerializersT>, DeSerializersT> {
+    deSerializers: DeSerializersT;
+    private constructor();
+    static _privateFactory<DeSerializersT extends DeSerializers = DefaultDeSerializers>(deSerializers?: DeSerializersT): SalesOrderItmSubsqntProcFlowApi<DeSerializersT>;
+    private navigationPropertyFields;
+    _addNavigationProperties(linkedApis: [
+        SalesOrderApi<DeSerializersT>,
+        SalesOrderItemApi<DeSerializersT>
+    ]): this;
+    entityConstructor: typeof SalesOrderItmSubsqntProcFlow;
+    requestBuilder(): SalesOrderItmSubsqntProcFlowRequestBuilder<DeSerializersT>;
+    entityBuilder(): EntityBuilderType<SalesOrderItmSubsqntProcFlow<DeSerializersT>, DeSerializersT>;
+    customField<NullableT extends boolean = false>(fieldName: string, isNullable?: NullableT): CustomField<SalesOrderItmSubsqntProcFlow<DeSerializersT>, DeSerializersT, NullableT>;
+    private _fieldBuilder?;
+    get fieldBuilder(): FieldBuilder<typeof SalesOrderItmSubsqntProcFlow, DeSerializersT>;
+    private _schema?;
+    get schema(): {
+        SALES_ORDER: OrderableEdmTypeField<SalesOrderItmSubsqntProcFlow<DeSerializers<any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any>>, DeSerializersT, "Edm.String", false, true>;
+        SALES_ORDER_ITEM: OrderableEdmTypeField<SalesOrderItmSubsqntProcFlow<DeSerializers<any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any>>, DeSerializersT, "Edm.String", false, true>;
+        DOC_RELATIONSHIP_UUID: OrderableEdmTypeField<SalesOrderItmSubsqntProcFlow<DeSerializers<any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any>>, DeSerializersT, "Edm.Guid", false, true>;
+        SUBSEQUENT_DOCUMENT: OrderableEdmTypeField<SalesOrderItmSubsqntProcFlow<DeSerializers<any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any>>, DeSerializersT, "Edm.String", true, true>;
+        SUBSEQUENT_DOCUMENT_ITEM: OrderableEdmTypeField<SalesOrderItmSubsqntProcFlow<DeSerializers<any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any>>, DeSerializersT, "Edm.String", true, true>;
+        SUBSEQUENT_DOCUMENT_CATEGORY: OrderableEdmTypeField<SalesOrderItmSubsqntProcFlow<DeSerializers<any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any>>, DeSerializersT, "Edm.String", true, true>;
+        PROCESS_FLOW_LEVEL: OrderableEdmTypeField<SalesOrderItmSubsqntProcFlow<DeSerializers<any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any>>, DeSerializersT, "Edm.String", true, true>;
+        RELATED_PROC_FLOW_DOC_STS_FIELD_NAME: OrderableEdmTypeField<SalesOrderItmSubsqntProcFlow<DeSerializers<any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any>>, DeSerializersT, "Edm.String", true, true>;
+        SD_PROCESS_STATUS: OrderableEdmTypeField<SalesOrderItmSubsqntProcFlow<DeSerializers<any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any>>, DeSerializersT, "Edm.String", true, true>;
+        ACCOUNTING_TRANSFER_STATUS: OrderableEdmTypeField<SalesOrderItmSubsqntProcFlow<DeSerializers<any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any>>, DeSerializersT, "Edm.String", true, true>;
+        PRELIM_BILLING_DOCUMENT_STATUS: OrderableEdmTypeField<SalesOrderItmSubsqntProcFlow<DeSerializers<any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any>>, DeSerializersT, "Edm.String", true, true>;
+        SUBSQNT_DOC_ITM_PRECDG_DOCUMENT: OrderableEdmTypeField<SalesOrderItmSubsqntProcFlow<DeSerializers<any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any>>, DeSerializersT, "Edm.String", true, true>;
+        SUBSQNT_DOC_ITM_PRECDG_DOC_ITEM: OrderableEdmTypeField<SalesOrderItmSubsqntProcFlow<DeSerializers<any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any>>, DeSerializersT, "Edm.String", true, true>;
+        SUBSQNT_DOC_ITM_PRECDG_DOC_CATEGORY: OrderableEdmTypeField<SalesOrderItmSubsqntProcFlow<DeSerializers<any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any>>, DeSerializersT, "Edm.String", true, true>;
+        CREATION_DATE: OrderableEdmTypeField<SalesOrderItmSubsqntProcFlow<DeSerializers<any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any>>, DeSerializersT, "Edm.DateTime", true, true>;
+        CREATION_TIME: OrderableEdmTypeField<SalesOrderItmSubsqntProcFlow<DeSerializers<any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any>>, DeSerializersT, "Edm.Time", true, true>;
+        LAST_CHANGE_DATE: OrderableEdmTypeField<SalesOrderItmSubsqntProcFlow<DeSerializers<any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any>>, DeSerializersT, "Edm.DateTime", true, true>;
+        TO_SALES_ORDER: OneToOneLink<SalesOrderItmSubsqntProcFlow<DeSerializersT>, DeSerializersT, SalesOrderApi<DeSerializersT>>;
+        TO_SALES_ORDER_ITEM: OneToOneLink<SalesOrderItmSubsqntProcFlow<DeSerializersT>, DeSerializersT, SalesOrderItemApi<DeSerializersT>>;
+        ALL_FIELDS: AllFields<SalesOrderItmSubsqntProcFlow<DeSerializers<any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any, any>>>;
+    };
+}

@@ -1,0 +1,51 @@
+import { Entity, DefaultDeSerializers, DeSerializers, DeserializedType } from '@sap-cloud-sdk/odata-v2';
+import type { SalesOrderItmSubsqntProcFlowApi } from './SalesOrderItmSubsqntProcFlowApi';
+import { SalesOrder, SalesOrderType } from './SalesOrder';
+import { SalesOrderItem, SalesOrderItemType } from './SalesOrderItem';
+export declare class SalesOrderItmSubsqntProcFlow<T extends DeSerializers = DefaultDeSerializers> extends Entity implements SalesOrderItmSubsqntProcFlowType<T> {
+    readonly _entityApi: SalesOrderItmSubsqntProcFlowApi<T>;
+    static _entityName: string;
+    static _defaultBasePath: string;
+    static _keys: string[];
+    salesOrder: DeserializedType<T, 'Edm.String'>;
+    salesOrderItem: DeserializedType<T, 'Edm.String'>;
+    docRelationshipUuid: DeserializedType<T, 'Edm.Guid'>;
+    subsequentDocument?: DeserializedType<T, 'Edm.String'> | null;
+    subsequentDocumentItem?: DeserializedType<T, 'Edm.String'> | null;
+    subsequentDocumentCategory?: DeserializedType<T, 'Edm.String'> | null;
+    processFlowLevel?: DeserializedType<T, 'Edm.String'> | null;
+    relatedProcFlowDocStsFieldName?: DeserializedType<T, 'Edm.String'> | null;
+    sdProcessStatus?: DeserializedType<T, 'Edm.String'> | null;
+    accountingTransferStatus?: DeserializedType<T, 'Edm.String'> | null;
+    prelimBillingDocumentStatus?: DeserializedType<T, 'Edm.String'> | null;
+    subsqntDocItmPrecdgDocument?: DeserializedType<T, 'Edm.String'> | null;
+    subsqntDocItmPrecdgDocItem?: DeserializedType<T, 'Edm.String'> | null;
+    subsqntDocItmPrecdgDocCategory?: DeserializedType<T, 'Edm.String'> | null;
+    creationDate?: DeserializedType<T, 'Edm.DateTime'> | null;
+    creationTime?: DeserializedType<T, 'Edm.Time'> | null;
+    lastChangeDate?: DeserializedType<T, 'Edm.DateTime'> | null;
+    toSalesOrder?: SalesOrder<T> | null;
+    toSalesOrderItem?: SalesOrderItem<T> | null;
+    constructor(_entityApi: SalesOrderItmSubsqntProcFlowApi<T>);
+}
+export interface SalesOrderItmSubsqntProcFlowType<T extends DeSerializers = DefaultDeSerializers> {
+    salesOrder: DeserializedType<T, 'Edm.String'>;
+    salesOrderItem: DeserializedType<T, 'Edm.String'>;
+    docRelationshipUuid: DeserializedType<T, 'Edm.Guid'>;
+    subsequentDocument?: DeserializedType<T, 'Edm.String'> | null;
+    subsequentDocumentItem?: DeserializedType<T, 'Edm.String'> | null;
+    subsequentDocumentCategory?: DeserializedType<T, 'Edm.String'> | null;
+    processFlowLevel?: DeserializedType<T, 'Edm.String'> | null;
+    relatedProcFlowDocStsFieldName?: DeserializedType<T, 'Edm.String'> | null;
+    sdProcessStatus?: DeserializedType<T, 'Edm.String'> | null;
+    accountingTransferStatus?: DeserializedType<T, 'Edm.String'> | null;
+    prelimBillingDocumentStatus?: DeserializedType<T, 'Edm.String'> | null;
+    subsqntDocItmPrecdgDocument?: DeserializedType<T, 'Edm.String'> | null;
+    subsqntDocItmPrecdgDocItem?: DeserializedType<T, 'Edm.String'> | null;
+    subsqntDocItmPrecdgDocCategory?: DeserializedType<T, 'Edm.String'> | null;
+    creationDate?: DeserializedType<T, 'Edm.DateTime'> | null;
+    creationTime?: DeserializedType<T, 'Edm.Time'> | null;
+    lastChangeDate?: DeserializedType<T, 'Edm.DateTime'> | null;
+    toSalesOrder?: SalesOrderType<T> | null;
+    toSalesOrderItem?: SalesOrderItemType<T> | null;
+}
