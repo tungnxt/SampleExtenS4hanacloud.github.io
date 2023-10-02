@@ -27,3 +27,5 @@ applications:
     services:
       - my-destination
       - my-xsuaa
+      - s4-test
+      - extend-s4
