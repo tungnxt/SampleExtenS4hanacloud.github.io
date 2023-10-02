@@ -2,9 +2,8 @@
 
 ---
 
-Written by: Tungnx - 10/08/2023
+Written by: Tungnx 
 
-## Giới thiệu
 
 ## Tài liệu
 
@@ -14,16 +13,5 @@ Written by: Tungnx - 10/08/2023
 4. Sample using Destination for call Api/Odata of SAP S4HANA Cloud: https://api.sap.com/api/API_SALES_ORDER_SRV/cloud-sdk/JavaScript
 5. Using Authentication type for call Odata: https://sap.github.io/cloud-sdk/docs/js/features/connectivity/destinations
 
-## SystemLandsapce
 
-## Cấu hình
 
-1. Installations:
-
-- Node:
-- Npm:
-- Cloud foundry CLI:
-- Nest CLI: npm i -g @nestjs/cli
-- @sap-cloud-sdk/generator: npm install -D @sap-cloud-sdk/generator <Dependencies>
-
-## Source Code
