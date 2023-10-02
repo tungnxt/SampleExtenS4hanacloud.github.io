@@ -13,5 +13,13 @@ Written by: Tungnx
 4. Sample using Destination for call Api/Odata of SAP S4HANA Cloud: https://api.sap.com/api/API_SALES_ORDER_SRV/cloud-sdk/JavaScript
 5. Using Authentication type for call Odata: https://sap.github.io/cloud-sdk/docs/js/features/connectivity/destinations
 
+## Các services sử dụng trên BTP 
+1. SAP S/4HANA Cloud Extensibility <Api-Access> - Check trong file manifest.yml <Extend-s4 và S4-test>
+2. Authorization and Trust Management Service   - Check trong file manifest.yml <my-xsuaa>
+3. Destination Service                          - Check trong file manifest.yml <my-destination> 
+4. Cloud Foundry Runtimes 
 
+## Cấu hình chi tiết: 
+MyContact: 0397703020 
+Email: ng.xuantung11@gmail.com
 
