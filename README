@@ -19,6 +19,11 @@ Written by: Tungnx
 3. Destination Service                          - Check trong file manifest.yml <my-destination> 
 4. Cloud Foundry Runtimes 
 
+## Sử dụng SAP Cloud Sdk nest Js 
+- Sap Cloud Sdk là bộ dev kit dùng để làm Back-End và cung cấp ra các services 
+- Muốn xây dựng front trên Project này, có thể sử dụng handlebar và render các file html làm UI  
+
+
 ## Cấu hình chi tiết: 
 MyContact: 0397703020 
 Email: ng.xuantung11@gmail.com
